@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+.body{
+    background: url(./snake.jpg);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#board{
+    background: linear-gradient(rgb(169, 238, 255), rgb(135, 252, 141));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+#scoreBox{
+    position: absolute;
+    top: 8px;
+    right: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+#highscoreBox{
+    position: absolute;
+    top: 60px;
+    right: 140px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+.head{
+    background: linear-gradient(rgb(25, 184, 25), rgb(51, 54, 218));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: #80004b;
+    border: .25vmin solid #000000;
+    border-radius: 20px;
+}
+
+.food{
+    background: linear-gradient(red , purple);
+    border: .25vmin solid black;
+    border-radius: 10px;
+}
